@@ -3,12 +3,12 @@
     public enum ProductCategory
     {
         None = 0,
-        Electronics,
-        Fashion,
-        HealthBeauty,
-        Motors,
-        Collectibles,
-        Sports,
-        HomeGarden
+        Electronics = 1,
+        Fashion = 2,
+        HealthBeauty = 3,
+        Motors = 4,
+        Collectibles = 5,
+        Sports = 6,
+        HomeGarden = 7
     }
 }

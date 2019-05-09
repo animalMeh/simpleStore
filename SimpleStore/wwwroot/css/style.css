@@ -1,0 +1,122 @@
+﻿body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+a, div {
+    color: #999999;
+}
+
+.nav-link {
+    color: lightcoral;
+}
+
+.header-item {
+    font-size: 20px;
+    margin: 0 68px;
+    border-bottom: 1px solid #ffffff00;
+}
+
+.cart {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    align-items:baseline;
+}
+
+.сart__count {
+    font-size: 15px;
+    line-height: 1.3;
+    border: 1px solid lightcoral;
+    padding:2px 8px;
+    border-radius: 50px;
+}
+
+.category-item {
+    font-size: 15px;
+    margin: 0 10px;
+    border-bottom: 1px solid #ffffff00;
+}
+
+    .header-item:hover, .category-item:hover {
+        border-bottom: 1px solid #d88a8a34;
+    }
+
+.store {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.store-item {
+    display: block;
+    max-width: 300px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #d88a8a34;
+    transition: background-color .3s linear;
+}
+
+    .store-item:hover {
+        background-color: #d88a8a34;
+    }
+
+.store-item__name {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 8px 0;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store-item__image {
+    height: 200px;
+    padding: 8px;
+}
+
+    .store-item__image img {
+        max-width: 280px;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+.store-item__Cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.store-item__purchase {
+    text-transform: uppercase;
+    color: #999999;
+    display: block;
+    text-align: center;
+}
+
+.store-item__add, .store-item__remove {
+    border: 1px solid lightcoral;
+    border-radius: 50px;
+    padding: 0 8px 4px;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0 18px;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.store-item__remove {
+    padding: 0 12px 4px;
+}
+
+    .store-item__add:hover, .store-item__remove:hover {
+        color: black;
+    }
+
+    .store-item__add:active, .store-item__remove:active {
+        color: lightcoral;
+    }

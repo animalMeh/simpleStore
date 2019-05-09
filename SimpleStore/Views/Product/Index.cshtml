@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SimpleStore.Models.Product.Product>
+
+@{
+    ViewData["Title"] = "Store";
+}
+
+@*@using (@Html.BeginForm("Index", "Product"))
+{
+    @Html.HiddenFor(x => x.Id)
+    <input type="submit" name="Done"/>
+}*@
+
+@*@Html.ActionLink("Catalog", "About", "Product")*@
+
+<div class="store">
+        @foreach (var item in Model)
+        {
+        <div class="store-item" >
+            <div class="store-item__name">
+                @item.Name
+            </div>
+            <div class="store-item__image">
+                <img src="~/images/Помада.jpg" alt="">
+            </div>
+            <div class="store-item__Cart">
+                <span style="display:none">@item.Id</span>
+                <span class="store-item__add">+</span>
+                <a class="store-item__purchase">cart</a>
+                <span class="store-item__remove">-</span>
+            </div>
+        </div>
+        }
+</div>

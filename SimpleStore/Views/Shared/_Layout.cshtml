@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Simple Store</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-reboot.css">
+        <link rel="stylesheet" href="~/css/style.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="header-item logo">
+                <a asp-area="" asp-controller="Product" asp-action="Index" class="nav-link">Simple Store</a>
+            </div>
+            <div class="header-item cart">
+                <span class="сart__count"></span>
+                <a href="" class="nav-link">Cart</a>
+            </div>
+        </nav>
+    </header>
+    <div class="category">
+        <div class="categiry-item navbar navbar-inverse">
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="Electronics" class="nav-link" >Electoronics</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="Fashion" class="nav-link" >Fashion</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="HealthBeauty" class="nav-link" >Health & Beauty</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="Motors," class="nav-link" >Motors</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="Collectibles" class="nav-link" >Collectibles</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="Sports" class="nav-link" >Sports</a></div>
+            <div class="category-item"><a asp-controller="Product" asp-action="Category" asp-route-category="HomeGarden" class="nav-link" >Home & Garder</a></div>
+        </div>
+    </div>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <p>Simple Store</p>
+    </footer>
+
+        <environment include="Development">
+            <script src="~/lib/jquery/js/jquery-3.4.0.min.js"></script>
+            <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+            <script src="~/js/script.js" asp-append-version="true"></script>
+        </environment>
+        <environment exclude="Development">
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                    asp-fallback-src="~/lib/jquery/js/jquery-3.4.0.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+            </script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+            </script>
+            <script src="~/js/script.min.js" asp-append-version="true"></script>
+        </environment>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

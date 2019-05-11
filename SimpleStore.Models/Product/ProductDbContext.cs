@@ -18,6 +18,12 @@ namespace SimpleStore.Models.Product
             
         }
 
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
+        //{
+        //    base.OnConfiguring(optionsBuilder);
+        //    Products.Add(new Product { Name = "Иллья", Category = Enums.ProductCategory.HealthBeauty });
+            
+        //}
         protected override void OnModelCreating (ModelBuilder modelBuilder) 
         {
             base.OnModelCreating(modelBuilder);

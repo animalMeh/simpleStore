@@ -21,7 +21,6 @@ namespace SimpleStore.Controllers
         public CartController(IHttpContextAccessor acc, ProductDbContext shopContext)
         {
             this.httpContext = acc.HttpContext;
-         //   var items = SessitonSaver.GetObjectFromJson<Dictionary<Product, int>>(context.Session, "cart");
             this.currentSessionCart = SessitonSaver.GetObjectFromJson<List<CartItem>>(this.httpContext.Session, "cart") ?? new List<CartItem>();
             this.shopContext = shopContext;
            
@@ -30,8 +29,7 @@ namespace SimpleStore.Controllers
         [Route("cart")]
         public IActionResult Index()
         {
-            ViewBag.cart = this.currentSessionCart;
-            return View();
+            return View(currentSessionCart);
         }
 
         [Route("add")]
@@ -48,7 +46,7 @@ namespace SimpleStore.Controllers
                 }
                 else
                 {
-                    currentSessionCart.Add(new CartItem() { Product = selectedProduct, Quantity = 1 });
+                    this.currentSessionCart.Add(new CartItem() { Product = selectedProduct, Quantity = 1 });
                 }
             }
 
@@ -80,9 +78,15 @@ namespace SimpleStore.Controllers
 
         [Route("count")]
         [HttpGet]
-        public int Remove()
+        public double Count()
         {
             return this.currentSessionCart.Sum(s => s.Quantity);
+        }
+
+        [Route("about")]
+        public JsonResult About()
+        {
+            return new JsonResult(this.currentSessionCart);
         }
     }
 

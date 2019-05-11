@@ -16,6 +16,13 @@ namespace SimpleStore.Models.Product
         [Required]
         public ProductCategory Category { get; set; }
 
+        [Required]
+        public string Image { get; set; }
+
+        [Required]
+        public double Price { get; set; }
+
+
         public override bool Equals(object obj)
         {
             if (obj is Product obj1)

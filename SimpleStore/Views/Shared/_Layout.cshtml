@@ -25,7 +25,7 @@
             </div>
             <div class="header-item cart">
                 <span class="сart__count"></span>
-                <a href="" class="nav-link">Cart</a>
+                <a asp-area="" asp-controller="Cart" asp-action="Index" class="nav-link">Cart</a>
             </div>
         </nav>
     </header>
@@ -43,7 +43,7 @@
     <main>
         @RenderBody()
     </main>
-    <footer>
+    <footer class="page-footer font-small ">
         <p>Simple Store</p>
     </footer>
 

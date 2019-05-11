@@ -1,7 +1,65 @@
-﻿
+﻿@model IEnumerable<SimpleStore.Models.Cart.CartItem>
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cart";
 }
 
-<h2>Index</h2>
+<div class="cart-empty">yo cart is empty,  select some staff</div>
 
+<div class="products">
+    <table class="table table-products">
+        <thead></thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="product-item">
+                    <td class="product-item__image store-item__image">
+                        <img src="@item.Product.Image" />
+                    </td>
+                    <td class="product-item__title">
+                        @item.Product.Name
+                    </td>
+                    <td class="product-item__price">
+                        @item.Product.Price $
+                    </td>
+                    <td class="product-item__options">
+                        <span class="store-item__Cart-id" style="display:none">@item.Product.Id</span>
+                        <a class="product-item__add cart-add">
+                            +
+                        </a>
+                        <span class="store-item__count сart__count">
+                            @item.Quantity
+                        </span>
+                        <a class="product-item__remove сart-remove">
+                            -
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="products-sum">
+        <span>Total: </span>
+        <span>@Model.Select(s => s.Product.Id).Sum()</span>
+    </div>
+</div>
+
+<div class="json-info">
+    <div class="get-json">
+        <a class="btn btn-info" asp-area="" asp-controller="Cart" asp-action="About">
+            get your data as json
+        </a>
+        <button class="btn btn-info get-json__button">
+            show data from json
+        </button>
+    </div>
+
+    <div class="helper">
+        <p class="text-info helper__explanation">Excplanation ↑</p>
+        <div class="list-group">
+            <li class="list-group-item">1. Add event handler on button 'show data from json' in .js file</li>
+            <li class="list-group-item">2. In this handler is written ajax request to method in cart controller which returns json object</li>
+            <li class="list-group-item">3. Data is showing via my method that creates and fill table .</li>
+        </div>
+    </div>
+    <div class="helper__table"></div>
+</div>

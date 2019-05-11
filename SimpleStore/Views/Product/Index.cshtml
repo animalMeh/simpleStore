@@ -4,14 +4,6 @@
     ViewData["Title"] = "Store";
 }
 
-@*@using (@Html.BeginForm("Index", "Product"))
-{
-    @Html.HiddenFor(x => x.Id)
-    <input type="submit" name="Done"/>
-}*@
-
-@*@Html.ActionLink("Catalog", "About", "Product")*@
-
 <div class="store">
         @foreach (var item in Model)
         {
@@ -20,13 +12,13 @@
                 @item.Name
             </div>
             <div class="store-item__image">
-                <img src="~/images/Помада.jpg" alt="">
+                <img src="@item.Image" alt="">
             </div>
             <div class="store-item__Cart">
-                <span style="display:none">@item.Id</span>
-                <span class="store-item__add">+</span>
-                <a class="store-item__purchase">cart</a>
-                <span class="store-item__remove">-</span>
+                <span class="store-item__Cart-id" style="display:none">@item.Id</span>
+                <a class="store-item__add cart-add">+</a>
+                <span class="store-item__purchase">@item.Price $</span>
+                <a class="store-item__remove сart-remove">-</a>
             </div>
         </div>
         }

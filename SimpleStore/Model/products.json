@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "2018 RSIM 12+ R-SIM Nano Unlock Card fits iPhone X8,7,6,6S 4G LTE iOS 10 11 BS",
+    "category": 1,
+    "image": "/images/products/electronic/2018RSIM12RSIMNanoUnlockCardfitsiPhoneX8766S4GLTEiOS1011BS.jpg",
+    "price": 106.55
+  },
+  {
+    "id": 2,
+    "name": "Dell Chromebook 3120 11.6d Intel Celeron N2840 2.16GHz 4GB 16GB SSD Laptop XDGJH",
+    "category": 1,
+    "image": "/images/products/electronic/DellChromebook3120116dIntelCeleronN28402.16GHz4GB16GBSSDLaptopXDGJH.jpg",
+    "price": 16.55
+  },
+  {
+    "id": 3,
+    "name": "ELEKTRONIKA Integral CHN-55 chronograph vintage Original Digital watch Soviet",
+    "category": 1,
+    "image": "/images/products/electronic/ELEKTRONIKAIntegralCHN55chronographvintageOriginalDigitalwatchSoviet.jpg",
+    "price": 96.55
+  },
+  {
+    "id": 4,
+    "name": "Lenovo ThinkPad T440s 14d 1080 Intel i7-4600U 2.1GHz 4GB DDR3 WIN8COA for Repair",
+    "category": 1,
+    "image": "/images/products/electronic/LenovoThinkPadT440s14d1080Inteli74600U21GHz4GBDDR3WIN8COAforRepair.jpg",
+    "price": 100.0
+  },
+  {
+    "id": 5,
+    "name": "Polaroid 636 CloseUp RETRO Instant Camera Original Vintage Close Up Good UK",
+    "category": 1,
+    "image": "/images/products/electronic/Polaroid636CloseUpRETROInstantCameraOriginalVintageCloseUpGoodUK.jpg",
+    "price": 1106.15
+  },
+  {
+    "id": 6,
+    "name": "Polaroid Originals B&W Film for 600 - 8 Hard Color Frames (4673)",
+    "category": 1,
+    "image": "/images/products/electronic/PolaroidOriginalsBWFilmfor6008HardColorFrames4673.jpg",
+    "price": 7.50
+  },
+  {
+    "id": 7,
+    "name": "Samsung Galaxy S6 Edge SM-G925W8 32GB - Gold Platinum (Unlocked) Smartphone",
+    "category": 1,
+    "image": "/images/products/electronic/SamsungGalaxyS6EdgeSMG925W832GBGoldPlatinumUnlockedSmartphone.jpg",
+    "price": 7.50
+  },
+  {
+    "id": 8,
+    "name": "Red Mi Note7 Xiaomi Mobile Phone 3GB+32GB 6GB +64GB Smart Phone Hot Miaolong 660",
+    "category": 1,
+    "image": "/images/products/electronic/RedMiNote7XiaomiMobilePhone3GB32GB6GB64GBSmartPhoneHotMiaolong660.jpg",
+    "price": 7.50
+  }
+]

@@ -1,5 +1,7 @@
-﻿using System.Linq;
+﻿using System.Diagnostics;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using SimpleStore.Model;
 using SimpleStore.Models.Product;
 
 namespace SimpleStore.Controllers
@@ -7,15 +9,12 @@ namespace SimpleStore.Controllers
     [Route("product")]
     public class ProductController : Controller
     {
-#region ctorprop
+
         private ProductDbContext shopContext;
         public ProductController(ProductDbContext shopContext)
         {
             this.shopContext = shopContext;
         }
-        #endregion
-
-#region mainview
 
         [Route("product")]
         [Route("catalog")]
@@ -25,7 +24,6 @@ namespace SimpleStore.Controllers
             var products = shopContext.Products.Select(s=>s).ToList();
             return View(products);
         }
-        #endregion
 
         public ActionResult Category(string category)
         {
@@ -33,25 +31,10 @@ namespace SimpleStore.Controllers
             return View("Index", products);
         }
 
-
-#region apirequest
-        [Route("/about")]
-        [HttpGet]
-        public JsonResult About()
+        [Route("error")]
+        public IActionResult Error()
         {
-            var a = shopContext.Products.Select(x => x).ToList();
-            return new JsonResult(a);
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-#endregion
     }
 }
-
-        //[Route("product")]
-        //[Route("catalog/")]
-        //[Route("~/")]
-        //[HttpPost]
-        //public JsonResult Index([FromForm] Product model)
-        //{
-        //    var a = shopContext.Products.Select(x => x).ToList();
-        //    return new JsonResult(a);
-        //}

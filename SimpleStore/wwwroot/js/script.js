@@ -3,6 +3,7 @@ let removeFromTheCartItems = document.querySelectorAll('.сart-remove');
 const cartItemsCount = document.querySelector('.сart__count');
 const cartEmptyMessage = document.querySelector('.cart-empty');
 const jsonTableButton = document.querySelector('.get-json__button');
+const totalProductsSum = document.querySelector('.product-sum__Total');
 
 window.onload = function () {
 
@@ -65,16 +66,20 @@ function ifSucces(clickedItem, method) {
         }
         let count = document.querySelector('.table-products').getElementsByTagName('tr').length;
 
-        if (count != 0 || count != undefined) {
+        if (count == 0 || count == undefined) {
             cartEmptyMessage.style.display = 'block';
-
         }
+
+        $.get('../cart/sum', (data) => {
+            if (!(isNaN(data) || data < 0)) {
+                totalProductsSum.innerHTML = (+data).toFixed(2) + ' $';
+            }
+        });
     }
 }
 
 function getJsonData() {
     $.get('../cart/about/', (data) => {
-        console.log(data);
         let s = document.querySelector('.helper__table');
         displayData(s, data)
     });
@@ -126,46 +131,3 @@ function displayData(whereInsertElement, data) {
     tbl.setAttribute("class", "table my-table");
 
 }
-
-
-    //if (data !== null) {
-
-    //    let head_row = document.createElement("tr");
-
-    //    if (isObj) {
-    //        for (let prop_name in data) {
-    //            let th = document.createElement("th");
-    //            th.innerHTML = prop_name;
-    //            head_row.appendChild(th);
-    //        }
-    //    }
-    //    else {
-    //        for (let prop_name in data[0]) {
-    //            let th = document.createElement("th");
-    //            th.innerHTML = prop_name;
-    //            head_row.appendChild(th);
-    //        }
-    //    }
-
-
-    //    tblHead.appendChild(head_row);
-    //    tbl.appendChild(tblHead);
-
-
-    //    for (element in data) {
-    //        let row = document.createElement("tr");
-    //        console.log(data[element]);
-    //        if (data[element] === 'object') {
-    //            displayData(true);
-    //        }
-    //        else {
-    //            let td = document.createElement("td");
-    //            td.innerHTML = data[element];
-    //            row.appendChild(td);
-    //        }
-    //        tblBody.appendChild(row);
-    //        tbl.appendChild(tblBody);
-    //        whereInsertElement.appendChild(tbl);
-    //        tbl.setAttribute("class", "table my-table");
-    //    }
-    //}

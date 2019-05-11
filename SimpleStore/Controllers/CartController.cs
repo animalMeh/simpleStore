@@ -84,9 +84,17 @@ namespace SimpleStore.Controllers
         }
 
         [Route("about")]
+        [HttpGet]
         public JsonResult About()
         {
             return new JsonResult(this.currentSessionCart);
+        }
+
+        [Route("sum")]
+        [HttpGet]
+        public double Sum()
+        {
+            return this.currentSessionCart.Sum(s => s.Product.Price * s.Quantity);
         }
     }
 

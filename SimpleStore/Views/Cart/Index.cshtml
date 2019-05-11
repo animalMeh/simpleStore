@@ -39,7 +39,7 @@
     </table>
     <div class="products-sum">
         <span>Total: </span>
-        <span>@Model.Select(s => s.Product.Id).Sum()</span>
+        <span class="product-sum__Total">@Model.Sum(s => s.Product.Price * s.Quantity) $</span>
     </div>
 </div>
 

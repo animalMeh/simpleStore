@@ -54,5 +54,201 @@
     "category": 1,
     "image": "/images/products/electronic/RedMiNote7XiaomiMobilePhone3GB32GB6GB64GBSmartPhoneHotMiaolong660.jpg",
     "price": 7.50
+  },
+  {
+    "id": 9,
+    "name": "Ivory Mermaid Wedding Dresses for Brides Long Sleeve Bridal Gowns Appliques Lace",
+    "category": 2,
+    "image": "/images/products/fashion/sl400.jpg",
+    "price": 149.65
+  },
+  {
+    "id": 10,
+    "name": "Pink Sweet 17 Prom Quinceanera Dresses for 17 Years Party Gowns Formal Brides",
+    "category": 2,
+    "image": "/images/products/fashion/l300.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 11,
+    "name": "New 35cm Pearl Wedding Hair Vine Crystal Bridal Accessories Diamante Headbands",
+    "category": 2,
+    "image": "/images/products/fashion/wed.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 12,
+    "name": "3.5mm Stereo Audio 1Male to 2 Female Headphone Mic TRRS Y Splitter Cable Adapter",
+    "category": 1,
+    "image": "/images/products/electronic/sl300.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 13,
+    "name": "Fashion Men's Leather Casual Shoes Breathable Antiskid Loafers Slip on Moccasins",
+    "category": 2,
+    "image": "/images/products/fashion/wer.jpg",
+    "price": 1153.0
+  },
+  {
+    "id": 14,
+    "name": "[Elizavecca] Witch Piggy Hell Pore Control Hyaluronic acid 97%",
+    "category": 3,
+    "image": "/images/products/healthbeauty/er.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 15,
+    "name": "NYX Cosmetic Soft Matte Lip Cream Liquid Gloss Lipstick Long Lasting 34 Color",
+    "category": 3,
+    "image": "/images/products/healthbeauty/1.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 16,
+    "name": "3Pcs 3ml Essential Oils Soluble Natural Fragrance Aroma Diffuser Aromatherapy",
+    "category": 3,
+    "image": "/images/products/healthbeauty/3Pcs3mlEssentialOilsSolubleNaturalFragranceAromaDiffuserAromatherapy.jpg",
+    "price": 3.55
+  },
+  {
+    "id": 17,
+    "name": "2IN1 High Power 10mW 532nm Green Beam Laser Pointer Lazer Projector Pen DJ Stage",
+    "category": 1,
+    "image": "/images/products/electronic/p3.jpg",
+    "price": 4.99
+  },
+  {
+    "id": 18,
+    "name": "504 pcs/set 6mm bling rhinestone diy car phone PC styling sticker decor ATAU",
+    "category": 7,
+    "image": "/images/products/homegarden/1.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 19,
+    "name": "Blue Bohemia Animal Theme Pillow Case Cover Home Sofa Waist Cushion Cover",
+    "category": 7,
+    "image": "/images/products/homegarden/2.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 20,
+    "name": "Blue Bohemia Animal Theme Pillow Case Cover Home Sofa Waist Cushion Cover",
+    "category": 7,
+    "image": "/images/products/homegarden/3.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 21,
+    "name": "Linen Oil Painting Cow Pillow Case Sofa Car Waist Cushion Cover Home Decor",
+    "category": 7,
+    "image": "/images/products/homegarden/4.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 22,
+    "name": "Plodovodnie rastenia",
+    "category": 7,
+    "image": "/images/products/homegarden/5.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 23,
+    "name": "Harru Potter",
+    "category": 5,
+    "image": "/images/products/collectiblies/13041970.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 24,
+    "name": "Madagaskar",
+    "category": 5,
+    "image": "/images/products/collectiblies/9509180873fc01fcdc3.jpg",
+    "price": 13.15
+  },
+  {
+    "id": 25,
+    "name": "wonder woman",
+    "category": 5,
+    "image": "/images/products/collectiblies/figurka_wonder.jpg",
+    "price": 1.01
+  },
+  {
+    "id": 26,
+    "name": "spider man",
+    "category": 5,
+    "image": "/images/products/collectiblies/marvelretrospidermani20772.jpg",
+    "price": 4.34
+  },
+  {
+    "id": 27,
+    "name": "marvel",
+    "category": 5,
+    "image": "/images/products/collectiblies/SuperheroeMarvel.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 28,
+    "name": "Magnetic Gauge Tool for Car/Truck Camber/Castor Strut Wheel Alignment Auto Tools",
+    "category": 4,
+    "image": "/images/products/motors/moto.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 29,
+    "name": "PDR Tools Black Glue Sticks Auto Body Painltess Dent Repair For Hail Puller 50pc",
+    "category": 4,
+    "image": "/images/products/motors/glue.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 30,
+    "name": "KTC AUTO TOOLS BMW2251 BMW X5(E53) REAR SUSPENSION BUSH EXTRACTOR/INSTALLER KIT",
+    "category": 4,
+    "image": "/images/products/motors/items.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 31,
+    "name": "Car Repair Tool 46pcs 1/4-Inch Socket Set Ratchet Wrench Combo Tools Kit Auto",
+    "category": 4,
+    "image": "/images/products/motors/l300.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 32,
+    "name": "Extractors Damaged Broken Screws Removal Tool Used in Removing the Damaged Bolts",
+    "category": 4,
+    "image": "/images/products/motors/pqpq.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 33,
+    "name": "Sports staff",
+    "category": 6,
+    "image": "/images/products/sports/bg2743.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 34,
+    "name": "sport staff",
+    "category": 6,
+    "image": "/images/products/sports/1.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 35,
+    "name": "sport staff",
+    "category": 6,
+    "image": "/images/products/sports/2.jpg",
+    "price": 113.0
+  },
+  {
+    "id": 36,
+    "name": "sport staff",
+    "category": 6,
+    "image": "/images/products/sports/4.jpg",
+    "price": 113.0
   }
 ]

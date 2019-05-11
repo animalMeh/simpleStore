@@ -21,7 +21,7 @@ namespace SimpleStore.Controllers
         [Route("~/")]
         public ActionResult Index()
         {
-            var products = shopContext.Products.Select(s=>s).ToList();
+            var products = shopContext.Products.Select(s => s).Take(18).ToList();
             return View(products);
         }
 

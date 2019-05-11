@@ -50,8 +50,11 @@ a, div {
 }
 
 .store-item {
-    display: block;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
     max-width: 300px;
+    min-width: 240px;
     margin-bottom: 25px;
     border-bottom: 1px solid #d88a8a34;
     transition: background-color .3s linear;
@@ -154,9 +157,15 @@ a, div {
 
 .products-sum {
     text-align:right;
-    margin-right: 250px;
-    margin-top: 30px;
+    margin-right: 10%;
+    margin-top: 25px;
 }
+
+.product-sum__Total {
+    font: bold 20px;
+    color: red;
+}
+
 
 .json-info {
     margin-left: 10%;

@@ -6,7 +6,3 @@ D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.
 D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.Models.AssemblyInfo.cs
 D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.Models.dll
 D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.Models.pdb
-D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.Models.csprojAssemblyReference.cache
-D:\web .net\SimpleStore\SimpleStore.Models\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
-D:\web .net\SimpleStore\SimpleStore.Models\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
-D:\web .net\SimpleStore\SimpleStore.Models\obj\Debug\netstandard2.0\SimpleStore.Models.csproj.CopyComplete
